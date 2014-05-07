@@ -12,7 +12,13 @@ var teamstats = [15, 25, 50]
 //
 
 //assigning player variable names and values
-var bigPapi = {name: "David Ortiz", battingaverage: ".241", rbi: "17", homeruns: "6"}
-var pedroia = {name: "Dustin Pedroia", battingaverage: ".275", rbi: "10", homeruns: "1"}
-var napoli  = {name: "Mike Napoli", battingaverage: ".290", rbi: "17", honeruns: "5"}
+var bigPapi = {name: "David Ortiz", battingaverage: ".241", rbi: "17", homeruns: "6", singles: "100", doubles: "200"}
+var pedroia = {name: "Dustin Pedroia", battingaverage: ".275", rbi: "10", homeruns: "1", singles: "100", doubles: "200"}
+var napoli  = {name: "Mike Napoli", battingaverage: 0.290, rbi: "17", honeruns: "5", singles: "100", doubles: "200"}
 //
+
+function hitstotal (player) {
+	return player.singles  + player.doubles;
+}
+
+console.log('bigPapis total hits:', hitstotal(bigPapi) );
