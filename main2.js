@@ -11,220 +11,222 @@ var teamname = "Red Sox"
 var teamstats = [15, 25, 50]
 //
 
-//assigning player variable names and values
-// Catchers
-var ross  = {
-	name: "David Ross", 
-	battingaverage: 0.182, 
-	rbi: 4,
-	homeruns: 2,
-	doubles: 2,
-	triples: 0, 
-	atbats: 33, 
-	games: 11
-}
+var players = [
+  //assigning player variable names and values
+  // Catchers
+  {
+    name: "David Ross",
+    battingaverage: 0.182,
+    rbi: 4,
+    homeruns: 2,
+    doubles: 2,
+    triples: 0,
+    atbats: 33,
+    games: 11
+  },
 
-var pierzynski  = {
-	name: "A.J. Pierzynski", 
-	battingaverage: 0.275, 
-	rbi: 15, 
-	homeruns: 3, 
-	doubles: 2, 
-	triples: 0, 
-	atbats: 91, 
-	games: 27
-}
+  {
+    name: "A.J. Pierzynski",
+    battingaverage: 0.275,
+    rbi: 15,
+    homeruns: 3,
+    doubles: 2,
+    triples: 0,
+    atbats: 91,
+    games: 27
+  },
 
-// Infielders
+  // Infielders
 
-var bogaerts  = {
-	name: "Xander Bogaerts", 
-	battingaverage: 0.268, 
-	rbi: 5, 
-	homeruns: 1, 
-	doubles: 7, 
-	triples: 0, 
-	atbats: 112, 
-	games: 31
-}
+  {
+    name: "Xander Bogaerts",
+    battingaverage: 0.268,
+    rbi: 5,
+    homeruns: 1,
+    doubles: 7,
+    triples: 0,
+    atbats: 112,
+    games: 31
+  },
 
-var herrera  = {
-	name: "Jonathan Herrera", 
-	battingaverage: 0.182, 
-	rbi: 4, 
-	homeruns: 0, 
-	doubles: 0, 
-	triples: 0, 
-	atbats: 33, 
-	games: 17
-}
+  {
+    name: "Jonathan Herrera",
+    battingaverage: 0.182,
+    rbi: 4,
+    homeruns: 0,
+    doubles: 0,
+    triples: 0,
+    atbats: 33,
+    games: 17
+  },
 
-var middlebrooks  = {
-	name: "Will Middlebrooks",
-	battingaverage: 0.208, 
-	rbi: 5, 
-	homeruns: 2, 
-	doubles: 3, 
-	triples: 0, 
-	atbats: 48, 
-	games: 14
-}
+  {
+    name: "Will Middlebrooks",
+    battingaverage: 0.208,
+    rbi: 5,
+    homeruns: 2,
+    doubles: 3,
+    triples: 0,
+    atbats: 48,
+    games: 14
+  },
 
-var napoli  = {
-	name: "Mike Napoli", 
-	battingaverage: 0.290, 
-	rbi: 17, 
-	homeruns: 5, 
-	doubles: 6, 
-	triples: 0, 
-	atbats: 107, 
-	games: 30
-}
+  {
+    name: "Mike Napoli",
+    battingaverage: 0.290,
+    rbi: 17,
+    homeruns: 5,
+    doubles: 6,
+    triples: 0,
+    atbats: 107,
+    games: 30
+  },
 
-var pedroia = {
-	name: "Dustin Pedroia", 
-	battingaverage: 0.275, 
-	rbi: 10, 
-	homeruns: 1, 
-	doubles: 11, 
-	triples: 0, 
-	atbats: 131, 
-	games: 31
-}
+  {
+    name: "Dustin Pedroia",
+    battingaverage: 0.275,
+    rbi: 10,
+    homeruns: 1,
+    doubles: 11,
+    triples: 0,
+    atbats: 131,
+    games: 31
+  },
 
-// Outfielders
+  // Outfielders,
 
-var bradley  = {
-	name: "Jackey Bradley Jr.", 
-	battingaverage: 0.216, 
-	rbi: 13, 
-	homeruns: 0, 
-	doubles: 9, 
-	triples: 1, 
-	atbats: 97, 
-	games: 31
-}
+  {
+    name: "Jackey Bradley Jr.",
+    battingaverage: 0.216,
+    rbi: 13,
+    homeruns: 0,
+    doubles: 9,
+    triples: 1,
+    atbats: 97,
+    games: 31
+  },
 
-var carp  = {
-	name: "Mike Carp", 
-	battingaverage: 0.257, 
-	rbi: 2, 
-	homeruns: 0, 
-	doubles: 3, 
-	triples: 0, 
-	atbats: 35, 
-	games: 18
-}
+  {
+    name: "Mike Carp",
+    battingaverage: 0.257,
+    rbi: 2,
+    homeruns: 0,
+    doubles: 3,
+    triples: 0,
+    atbats: 35,
+    games: 18
+  },
 
-var gomes  = {
-	name: "Johnny Gomes", 
-	battingaverage: 0.225, 
-	rbi: 13, 
-	homeruns: 3, 
-	doubles: 5, 
-	triples: 0, 
-	atbats: 71, 
-	games: 24
-}
+  {
+    name: "Johnny Gomes",
+    battingaverage: 0.225,
+    rbi: 13,
+    homeruns: 3,
+    doubles: 5,
+    triples: 0,
+    atbats: 71,
+    games: 24
+  },
 
-var sizemore  = {
-	name: "Grady Sizemore", 
-	battingaverage: 0.242, 
-	rbi: 11, 
-	homeruns: 2, 
-	doubles: 5, 
-	triples: 1, 
-	atbats: 91, 
-	games: 25
-}
-var victorino  = {
-	name: "Shane victorino", 
-	battingaverage: 0.250, 
-	rbi: 3, 
-	homeruns: 0, 
-	doubles: 5, 
-	triples: 0, 
-	atbats: 40, 
-	games: 9
-}
+  {
+    name: "Grady Sizemore",
+    battingaverage: 0.242,
+    rbi: 11,
+    homeruns: 2,
+    doubles: 5,
+    triples: 1,
+    atbats: 91,
+    games: 25,
+  },
+  {
+    name: "Shane victorino",
+    battingaverage: 0.250,
+    rbi: 3,
+    homeruns: 0,
+    doubles: 5,
+    triples: 0,
+    atbats: 40,
+    games: 9
+  },
 
-// Designated Hitter
+  // Designated Hitter,
 
-var ortiz = {
-	name: "David Ortiz", 
-	battingaverage: 0.241, 
-	rbi: 17, 
-	homeruns: 6, 
-	doubles: 5, 
-	triples: 0, 
-	atbats: 112, 
-	games: 30
-}
+  {
+    name: "David Ortiz",
+    battingaverage: 0.241,
+    rbi: 17,
+    homeruns: 6,
+    doubles: 5,
+    triples: 0,
+    atbats: 112,
+    games: 30
+  },
 
-//Pitchers
+  //Pitchers,
 
-var uehara  = {
-	name: "Koji Uehara", 
-	wins: 0, 
-	losses: 1, 
-	era: 1.32, 
-	strikeouts: 19, 
-	walks: 3
-}
+  {
+    name: "Koji Uehara",
+    wins: 0,
+    losses: 1,
+    era: 1.32,
+    strikeouts: 19,
+    walks: 3
+  },
 
-var buckholz  = {
-	name: "Clay Buchholz", 
-	wins: 2, 
-	losses: 2, 
-	era: 5.63, 
-	strikeouts: 24, 
-	walks: 9
-}
+  {
+    name: "Clay Buchholz",
+    wins: 2,
+    losses: 2,
+    era: 5.63,
+    strikeouts: 24,
+    walks: 9
+  },
 
-var doubront  = {
-	name: "Felix Doubront", 
-	wins: 1, 
-	losses: 3, 
-	era: 5.09, 
-	strikeouts: 24, 
-	walks: 15
-}
+  {
+    name: "Felix Doubront",
+    wins: 1,
+    losses: 3,
+    era: 5.09,
+    strikeouts: 24,
+    walks: 15
+  },
 
-var lackey  = {
-	name: "John Lackey", 
-	wins: 4, 
-	losses: 2, 
-	era: 3.72, 
-	strikeouts: 43, 
-	walks: 11
-}
+  {
+    name: "John Lackey",
+    wins: 4,
+    losses: 2,
+    era: 3.72,
+    strikeouts: 43,
+    walks: 11
+  },
 
-var lester  = {
-	name: "Jon Lester", 
-	wins: 3, 
-	losses: 4, 
-	era: 2.59, 
-	strikeouts: 58, 
-	walks: 10
-}
+  {
+    name: "Jon Lester",
+    wins: 3,
+    losses: 4,
+    era: 2.59,
+    strikeouts: 58,
+    walks: 10
+  },
 
-var miller  = {
-	name: "Andrew Miller", 
-	wins: 1, 
-	losses: 0, 
-	era: 1.84, 
-	strikeouts: 20, 
-	walks: 4
-}
+  {
+    name: "Andrew Miller",
+    wins: 1,
+    losses: 0,
+    era: 1.84,
+    strikeouts: 20,
+    walks: 4
+  },
 
-var peavy  = {
-	name: "Jake peavy", 
-	wins: 1, 
-	losses: 1, 
-	era: 2.87, 
-	strikeouts: 36, 
-	walks: 21
-}
+  {
+    name: "Jake peavy",
+    wins: 1,
+    losses: 1,
+    era: 2.87,
+    strikeouts: 36,
+    walks: 21
+  }
+]
 
 //
 
@@ -258,6 +260,3 @@ function triplespergame (player) {
 }
 //
 
-console.log('Dustin Pedroia At Bats Per Game:', batspergame(pedroia));
-console.log('David Ortiz Multiples Base Hits:', multiplebase(ortiz));
-console.log('Mike Napoli Home Runs Per Game:', homerunspergame(napoli));
