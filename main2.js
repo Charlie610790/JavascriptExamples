@@ -11,14 +11,23 @@ var teamname = "Red Sox"
 var teamstats = [15, 25, 50]
 //
 
+
+
 var players = [
   //assigning player variable names and values
-  // Catchers
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////Fielders////////////////////////////////////////////////////////////////////////////////////////
+  
   {
-    //1
+    // Catchers
+    //0
     name: "David Ross",
     battingaverage: 0.182,
     rbi: 4,
+    otherbatting: {
+      walks: 3,
+      strikeouts: 12
+    },
     homeruns: 2,
     doubles: 2,
     triples: 0,
@@ -27,10 +36,14 @@ var players = [
   },
 
   {
-    //2
+    //1
     name: "A.J. Pierzynski",
     battingaverage: 0.275,
     rbi: 15,
+    otherbatting: {
+      walks: 3,
+      strikeouts: 12
+    },
     homeruns: 3,
     doubles: 2,
     triples: 0,
@@ -41,10 +54,14 @@ var players = [
   // Infielders
 
   {
-    //3
+    //2
     name: "Xander Bogaerts",
     battingaverage: 0.268,
     rbi: 5,
+    otherbatting: {
+      walks: 3,
+      strikeouts: 12
+    },
     homeruns: 1,
     doubles: 7,
     triples: 0,
@@ -53,10 +70,14 @@ var players = [
   },
 
   {
-    //4
+    //3
     name: "Jonathan Herrera",
     battingaverage: 0.182,
     rbi: 4,
+    otherbatting: {
+      walks: 3,
+      strikeouts: 12
+    },
     homeruns: 0,
     doubles: 0,
     triples: 0,
@@ -65,10 +86,14 @@ var players = [
   },
 
   {
-    //5
+    //4
     name: "Will Middlebrooks",
     battingaverage: 0.208,
     rbi: 5,
+    otherbatting: {
+      walks: 3,
+      strikeouts: 12
+    },
     homeruns: 2,
     doubles: 3,
     triples: 0,
@@ -77,10 +102,14 @@ var players = [
   },
 
   {
-    //6
+    //5
     name: "Mike Napoli",
     battingaverage: 0.290,
     rbi: 17,
+    otherbatting: {
+      walks: 3,
+      strikeouts: 12
+    },
     homeruns: 5,
     doubles: 6,
     triples: 0,
@@ -89,10 +118,14 @@ var players = [
   },
 
   {
-    //7
+    //6
     name: "Dustin Pedroia",
     battingaverage: 0.275,
     rbi: 10,
+    otherbatting: {
+      walks: 3,
+      strikeouts: 12
+    },
     homeruns: 1,
     doubles: 11,
     triples: 0,
@@ -103,10 +136,14 @@ var players = [
   // Outfielders,
 
   {
-    //8
+    //7
     name: "Jackey Bradley Jr.",
     battingaverage: 0.216,
     rbi: 13,
+    otherbatting: {
+      walks: 3,
+      strikeouts: 12
+    },
     homeruns: 0,
     doubles: 9,
     triples: 1,
@@ -115,10 +152,14 @@ var players = [
   },
 
   {
-    //9
+    //8
     name: "Mike Carp",
     battingaverage: 0.257,
     rbi: 2,
+    otherbatting: {
+      walks: 3,
+      strikeouts: 12
+    },
     homeruns: 0,
     doubles: 3,
     triples: 0,
@@ -127,10 +168,14 @@ var players = [
   },
 
   {
-    //10
+    //9
     name: "Johnny Gomes",
     battingaverage: 0.225,
     rbi: 13,
+    otherbatting: {
+      walks: 3,
+      strikeouts: 12
+    },
     homeruns: 3,
     doubles: 5,
     triples: 0,
@@ -139,10 +184,14 @@ var players = [
   },
 
   {
-    //11
+    //10
     name: "Grady Sizemore",
     battingaverage: 0.242,
     rbi: 11,
+    otherbatting: {
+      walks: 3,
+      strikeouts: 12
+    },
     homeruns: 2,
     doubles: 5,
     triples: 1,
@@ -150,10 +199,14 @@ var players = [
     games: 25,
   },
   {
-    //12
+    //11
     name: "Shane victorino",
     battingaverage: 0.250,
     rbi: 3,
+    otherbatting: {
+      walks: 3,
+      strikeouts: 12
+    },
     homeruns: 0,
     doubles: 5,
     triples: 0,
@@ -164,10 +217,14 @@ var players = [
   // Designated Hitter,
 
   {
-    //13
+    //12
     name: "David Ortiz",
     battingaverage: 0.241,
     rbi: 17,
+    otherbatting: {
+      walks: 3,
+      strikeouts: 12
+    },
     homeruns: 6,
     doubles: 5,
     triples: 0,
@@ -175,9 +232,10 @@ var players = [
     games: 30
   },
 
-  //Pitchers,
-
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////Pitchers////////////////////////////////////////////////////////////////////////////////////////
   {
+    //13
     name: "Koji Uehara",
     wins: 0,
     losses: 1,
@@ -187,6 +245,7 @@ var players = [
   },
 
   {
+    //14
     name: "Clay Buchholz",
     wins: 2,
     losses: 2,
@@ -196,6 +255,7 @@ var players = [
   },
 
   {
+    //15
     name: "Felix Doubront",
     wins: 1,
     losses: 3,
@@ -205,6 +265,7 @@ var players = [
   },
 
   {
+    //16
     name: "John Lackey",
     wins: 4,
     losses: 2,
@@ -214,6 +275,8 @@ var players = [
   },
 
   {
+
+    //18
     name: "Jon Lester",
     wins: 3,
     losses: 4,
@@ -223,6 +286,8 @@ var players = [
   },
 
   {
+
+    //17
     name: "Andrew Miller",
     wins: 1,
     losses: 0,
@@ -232,6 +297,7 @@ var players = [
   },
 
   {
+    //18
     name: "Jake peavy",
     wins: 1,
     losses: 1,
@@ -239,6 +305,7 @@ var players = [
     strikeouts: 36,
     walks: 21
   }
+  
 ]
 
 //

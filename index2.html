@@ -70,8 +70,75 @@
 		<div class="descrip">Entering "players[13].homeruns" will return "6" as he has hit 6 homeruns and this is attached in his variable array.  Another example would be entering "players[7].battingaverage" in the console which would return ".275" as this is the value attached in his variable array.</div>
 
 		
-		<div class="info">Interesting Data Pulls</div>
-		<div class="example">Pull interesting info : players.forEach(function(player){console.log("Player Name:", player.name, "Player RBIs:", player.rbi, "Player Homeruns:", player.homeruns, "Player Doubles:", player.doubles); })    ===== Players with their names, RBIs, Homeruns, and doubles
+		<div class="info">.forEach</div>
+		<div class="example">Sample 1: players.forEach(function(player){console.log("Player Name:", player.name, "Player RBIs:", player.rbi, "Player Homeruns:", player.homeruns, "Player Doubles:", player.doubles); })    ===== Players with their names, RBIs, Homeruns, and doubles
+		<br><br>
+		Sample 2: players.forEach(function(player) {console.log(player.name);})    ===== Will return all players and post to console log.
+		<br><br>
+		Sample 3: players.forEach(function(player){console.log("Player Name:", player.name, "RBIs:", player.rbi); })    ===== Will return all players and match with their RBIs and post to console log.
+		<br><br>
+		Sample 4: players.forEach(function(player){console.log("Player Name:", player.name, "ERA:", player.era); })    ===== Will return all pitchers and match with their ERA and post to console log.
+		<br><br>
+		Sample 5: SAMPLE    ===== Descrip Here.
+		<br><br>
+		Sample 6: SAMPLE    ===== Descrip Here.
+		<br><br>
+		Sample 7: SAMPLE    ===== Descrip Here.
+		<br><br>
+		Sample 8: SAMPLE    ===== Descrip Here.
+		<br><br>
+		Sample 9: SAMPLE    ===== Descrip Here.
+		<br><br>
+		Sample 10: SAMPLE    ===== Descrip Here.
+		</div>
+
+		<div class="info">.reduce</div>
+		<div class="example">Sample 1: [players[0].rbi,players[1].rbi,players[2].rbi,players[3].rbi].reduce(function(player1, player2){
+  		return player1 + player2; })  ===== Will return the total RBIs of all 4 of the above players added together.
+		<br><br>
+		Sample 2: [players[4].atbats,players[5].atbats,players[6].atbats,players[7].atbats].reduce(function(player1, player2){
+  		return player1 + player2; })    ===== Will return the total at bats of the above listed players.
+		<br><br>
+		Sample 3: [players[4].otherbatting.walks,players[5].otherbatting.walks,players[6].otherbatting.walks,players[7].otherbatting.walks].reduce(function(player1, player2){
+  		return player1 + player2; })    ===== Will return the total of all walks for the above 4 players as nested in their "other batting" stats.
+		<br><br>
+		Sample 4: [players[0].homeruns,players[1].homeruns,players[2].homeruns,players[3].homeruns,players[4].homeruns, players[5].homeruns].reduce(function(player1, player2){
+  		return player1 + player2; })    ===== Will return the total homeruns for the above 6 players.
+		<br><br>
+		Sample 5: SAMPLE    ===== Descrip Here.
+		<br><br>
+		Sample 6: SAMPLE    ===== Descrip Here.
+		<br><br>
+		Sample 7: SAMPLE    ===== Descrip Here.
+		<br><br>
+		Sample 8: SAMPLE    ===== Descrip Here.
+		<br><br>
+		Sample 9: SAMPLE    ===== Descrip Here.
+		<br><br>
+		Sample 10: SAMPLE    ===== Descrip Here.
+		</div>
+
+
+		<div class="info">.map</div>
+		<div class="example">Sample 1: players.map(function(player) {return player.name;})    ===== Will return all players in seperate strings.
+		<br><br>
+		Sample 2: players.map(function(player) {return [player.name];})    ===== Will return all players as seperate arrays.
+		<br><br>
+		Sample 3: SAMPLE    ===== Descrip Here.
+		<br><br>
+		Sample 4: SAMPLE    ===== Descrip Here.
+		<br><br>
+		Sample 5: SAMPLE    ===== Descrip Here.
+		<br><br>
+		Sample 6: SAMPLE    ===== Descrip Here.
+		<br><br>
+		Sample 7: SAMPLE    ===== Descrip Here.
+		<br><br>
+		Sample 8: SAMPLE    ===== Descrip Here.
+		<br><br>
+		Sample 9 SAMPLE    ===== Descrip Here.
+		<br><br>
+		Sample 10: SAMPLE    ===== Descrip Here.
 		</div>
 </body>
 </html>
