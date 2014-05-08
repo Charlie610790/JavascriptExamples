@@ -15,6 +15,7 @@ var players = [
   //assigning player variable names and values
   // Catchers
   {
+    //1
     name: "David Ross",
     battingaverage: 0.182,
     rbi: 4,
@@ -26,6 +27,7 @@ var players = [
   },
 
   {
+    //2
     name: "A.J. Pierzynski",
     battingaverage: 0.275,
     rbi: 15,
@@ -39,6 +41,7 @@ var players = [
   // Infielders
 
   {
+    //3
     name: "Xander Bogaerts",
     battingaverage: 0.268,
     rbi: 5,
@@ -50,6 +53,7 @@ var players = [
   },
 
   {
+    //4
     name: "Jonathan Herrera",
     battingaverage: 0.182,
     rbi: 4,
@@ -61,6 +65,7 @@ var players = [
   },
 
   {
+    //5
     name: "Will Middlebrooks",
     battingaverage: 0.208,
     rbi: 5,
@@ -72,6 +77,7 @@ var players = [
   },
 
   {
+    //6
     name: "Mike Napoli",
     battingaverage: 0.290,
     rbi: 17,
@@ -83,6 +89,7 @@ var players = [
   },
 
   {
+    //7
     name: "Dustin Pedroia",
     battingaverage: 0.275,
     rbi: 10,
@@ -96,6 +103,7 @@ var players = [
   // Outfielders,
 
   {
+    //8
     name: "Jackey Bradley Jr.",
     battingaverage: 0.216,
     rbi: 13,
@@ -107,6 +115,7 @@ var players = [
   },
 
   {
+    //9
     name: "Mike Carp",
     battingaverage: 0.257,
     rbi: 2,
@@ -118,6 +127,7 @@ var players = [
   },
 
   {
+    //10
     name: "Johnny Gomes",
     battingaverage: 0.225,
     rbi: 13,
@@ -129,6 +139,7 @@ var players = [
   },
 
   {
+    //11
     name: "Grady Sizemore",
     battingaverage: 0.242,
     rbi: 11,
@@ -139,6 +150,7 @@ var players = [
     games: 25,
   },
   {
+    //12
     name: "Shane victorino",
     battingaverage: 0.250,
     rbi: 3,
@@ -152,6 +164,7 @@ var players = [
   // Designated Hitter,
 
   {
+    //13
     name: "David Ortiz",
     battingaverage: 0.241,
     rbi: 17,
