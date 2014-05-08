@@ -337,3 +337,11 @@ function triplespergame (player) {
 	return player.triples / player.games;
 }
 //
+
+function averagerbi (rbiaverage) {
+  var total = array.reduce(function(first,second){
+    return first + second
+  })
+  console.log('total is', total);
+  return total / rbiaverage.length;
+}
