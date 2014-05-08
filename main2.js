@@ -11,8 +11,6 @@ var teamname = "Red Sox"
 var teamstats = [15, 25, 50]
 //
 
-
-
 var players = [
   //assigning player variable names and values
     ////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -339,4 +337,3 @@ function triplespergame (player) {
 	return player.triples / player.games;
 }
 //
-
