@@ -134,11 +134,11 @@
 		<br><br>
 		Sample 7: players.map(function(player) {"The Red Sox pitcher",console.log(player.name,"has",player.losses,"losses","and",player.wins,"wins.");})    ===== Will retrun "The Red Sox pitcher NAME has X wins and X losses.
 		<br><br>
-		Sample 8: players.map(function(player) {console.log(player.name,"has",player.strikeouts,"strikeouts","and",player.walks,"walks.");})    ===== Will retrun "NAME has X strikeouts and X walks.
+		Sample 8: players.map(function(player) {console.log(player.name,"has thrown",player.strikeouts,"strikeouts","and",player.walks,"walks.");})    ===== Will retrun "NAME has thrown X strikeouts and X walks for pitchers.
 		<br><br>
-		Sample 9 SAMPLE    ===== Descrip Here.
+		Sample 9 players.map(function(player) {console.log(player.name,"has had",player.otherbatting.strikeouts,"strikeouts","and",player.otherbatting.walks,"walks at bat.");})    ===== Will retrun "NAME has had X strikeouts and X walks at bat for fielders.
 		<br><br>
-		Sample 10: SAMPLE    ===== Descrip Here.
+		Sample 10: players.map(function(player) {console.log(player.name,"has had",player.otherbatting.strikeouts,"strikeouts","and",player.otherbatting.walks,"walks at bat.  But has had a whopping",player.homeruns,"homeruns this season." );})    ===== Will retrun "NAME has had X strikeouts and X walks at bat for fielders.  Will also return "But has had a whopping X homeruns this season."
 		</div>
 </body>
 </html>
