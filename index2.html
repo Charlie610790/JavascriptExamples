@@ -79,9 +79,9 @@
 		<br><br>
 		Sample 4: players.forEach(function(player){console.log("Player Name:", player.name, "ERA:", player.era); })    ===== Will return all pitchers and match with their ERA and post to console log.
 		<br><br>
-		Sample 5: SAMPLE    ===== Descrip Here.
+		Sample 5: players.forEach(function(player){console.log("Player Name:", player.name, "Walks:", player.otherbatting.walks); })    ===== Will return walks for the player.
 		<br><br>
-		Sample 6: SAMPLE    ===== Descrip Here.
+		Sample 6: players.forEach(function(player){console.log("Player Name:", player.name, "Strikeouts:", player.otherbatting.strikeouts); })    ===== Will return strikeouts for the player.
 		<br><br>
 		Sample 7: SAMPLE    ===== Descrip Here.
 		<br><br>
@@ -132,9 +132,9 @@
 		<br><br>
 		Sample 6: {console.log(player.name,"has",player.otherbatting.strikeouts,"strikeouts.");})   ===== Will return Player Name has X strikeouts (from the nested object "other batting".)
 		<br><br>
-		Sample 7: SAMPLE    ===== Descrip Here.
+		Sample 7: players.map(function(player) {"The Red Sox pitcher",console.log(player.name,"has",player.losses,"losses","and",player.wins,"wins.");})    ===== Will retrun "The Red Sox pitcher NAME has X wins and X losses.
 		<br><br>
-		Sample 8: SAMPLE    ===== Descrip Here.
+		Sample 8: players.map(function(player) {"The Red Sox pitcher",console.log(player.name,"has",player.strikeouts,"strikeouts","and",player.walks,"walks.");})    ===== Will retrun "NAME has X strikeouts and X walks.
 		<br><br>
 		Sample 9 SAMPLE    ===== Descrip Here.
 		<br><br>

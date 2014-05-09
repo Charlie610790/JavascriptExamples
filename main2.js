@@ -57,8 +57,8 @@ var players = [
     battingaverage: 0.268,
     rbi: 5,
     otherbatting: {
-      walks: 3,
-      strikeouts: 12
+      walks: 4,
+      strikeouts: 19
     },
     homeruns: 1,
     doubles: 7,
@@ -89,8 +89,8 @@ var players = [
     battingaverage: 0.208,
     rbi: 5,
     otherbatting: {
-      walks: 3,
-      strikeouts: 12
+      walks: 9,
+      strikeouts: 19
     },
     homeruns: 2,
     doubles: 3,
@@ -239,7 +239,11 @@ var players = [
     losses: 1,
     era: 1.32,
     strikeouts: 19,
-    walks: 3
+    walks: 3,
+    otherbatting: {
+      walks: 0,
+      strikeouts: 0
+    }
   },
 
   {
@@ -249,7 +253,11 @@ var players = [
     losses: 2,
     era: 5.63,
     strikeouts: 24,
-    walks: 9
+    walks: 9,
+    otherbatting: {
+      walks: 0,
+      strikeouts: 0
+    }
   },
 
   {
@@ -259,7 +267,11 @@ var players = [
     losses: 3,
     era: 5.09,
     strikeouts: 24,
-    walks: 15
+    walks: 15,
+    otherbatting: {
+      walks: 0,
+      strikeouts: 0
+    }
   },
 
   {
@@ -269,7 +281,11 @@ var players = [
     losses: 2,
     era: 3.72,
     strikeouts: 43,
-    walks: 11
+    walks: 11,
+    otherbatting: {
+      walks: 0,
+      strikeouts: 0
+    }
   },
 
   {
@@ -280,7 +296,11 @@ var players = [
     losses: 4,
     era: 2.59,
     strikeouts: 58,
-    walks: 10
+    walks: 10,
+    otherbatting: {
+      walks: 0,
+      strikeouts: 0
+    }
   },
 
   {
@@ -291,7 +311,11 @@ var players = [
     losses: 0,
     era: 1.84,
     strikeouts: 20,
-    walks: 4
+    walks: 4,
+    otherbatting: {
+      walks: 0,
+      strikeouts: 0
+    }
   },
 
   {
@@ -301,7 +325,11 @@ var players = [
     losses: 1,
     era: 2.87,
     strikeouts: 36,
-    walks: 21
+    walks: 21,
+    otherbatting: {
+      walks: 0,
+      strikeouts: 0
+    }
   }
   
 ]
