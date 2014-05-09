@@ -366,7 +366,7 @@ function triplespergame (player) {
 }
 //
 
-function averagerbi (rbiaverage) {
+function averagerbi (player) {
   var total = array.reduce(function(first,second){
     return first + second
   })
