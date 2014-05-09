@@ -1,4 +1,3 @@
-
 // simple variable that assigns the value of X to 3
 var x = 3
 // when run "x > 4" in console will return false
@@ -11,16 +10,46 @@ var teamname = "Red Sox"
 var teamstats = [15, 25, 50]
 //
 
+//
+
+
+
+// for each over players array and get rbi's and push into new array then reduce 
+//  said array then 
+
+
+function averagerbi () {
+  var getRbis = players.forEach(
+    function(
+      player
+      ) 
+    {
+    // return [player.rbi]
+  }
+  ) 
+  // console.log('RBIs', [allrbis]);
+
+  var allRbis = getRbis.reduce(
+    function(
+      first,second
+      )
+    {
+    return first + second
+  }
+  )
+  return  allRbis/ allrbis.length;
+}
+//
+
 var players = [
-  //assigning player variable names and values
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////
+//assigning player variable names and values
 ////////Fielders////////////////////////////////////////////////////////////////////////////////////////
-  
   {
     // Catchers
     //0
     name: "David Ross",
     battingaverage: 0.182,
+    position: "Catcher",
     rbi: 4,
     otherbatting: {
       walks: 3,
@@ -37,6 +66,7 @@ var players = [
     //1
     name: "A.J. Pierzynski",
     battingaverage: 0.275,
+    position: "Catcher",
     rbi: 15,
     otherbatting: {
       walks: 3,
@@ -55,6 +85,7 @@ var players = [
     //2
     name: "Xander Bogaerts",
     battingaverage: 0.268,
+    position: "Short Stop",
     rbi: 5,
     otherbatting: {
       walks: 4,
@@ -71,6 +102,7 @@ var players = [
     //3
     name: "Jonathan Herrera",
     battingaverage: 0.182,
+    position: "Short Stop",
     rbi: 4,
     otherbatting: {
       walks: 3,
@@ -87,6 +119,7 @@ var players = [
     //4
     name: "Will Middlebrooks",
     battingaverage: 0.208,
+    position: "Third Base",
     rbi: 5,
     otherbatting: {
       walks: 9,
@@ -103,6 +136,7 @@ var players = [
     //5
     name: "Mike Napoli",
     battingaverage: 0.290,
+    position: "First Base",
     rbi: 17,
     otherbatting: {
       walks: 3,
@@ -119,6 +153,7 @@ var players = [
     //6
     name: "Dustin Pedroia",
     battingaverage: 0.275,
+    position: "Second Base",
     rbi: 10,
     otherbatting: {
       walks: 3,
@@ -137,6 +172,7 @@ var players = [
     //7
     name: "Jackey Bradley Jr.",
     battingaverage: 0.216,
+    position: "Center Field",
     rbi: 13,
     otherbatting: {
       walks: 3,
@@ -153,6 +189,7 @@ var players = [
     //8
     name: "Mike Carp",
     battingaverage: 0.257,
+    position: "Left Field",
     rbi: 2,
     otherbatting: {
       walks: 3,
@@ -169,6 +206,7 @@ var players = [
     //9
     name: "Johnny Gomes",
     battingaverage: 0.225,
+    position: "Left Field",
     rbi: 13,
     otherbatting: {
       walks: 3,
@@ -185,6 +223,7 @@ var players = [
     //10
     name: "Grady Sizemore",
     battingaverage: 0.242,
+    position: "Center Field",
     rbi: 11,
     otherbatting: {
       walks: 3,
@@ -196,10 +235,12 @@ var players = [
     atbats: 91,
     games: 25,
   },
+
   {
     //11
     name: "Shane victorino",
     battingaverage: 0.250,
+    position: "Right Field",
     rbi: 3,
     otherbatting: {
       walks: 3,
@@ -218,6 +259,7 @@ var players = [
     //12
     name: "David Ortiz",
     battingaverage: 0.241,
+    position: "Designated Hitter",
     rbi: 17,
     otherbatting: {
       walks: 3,
@@ -230,11 +272,11 @@ var players = [
     games: 30
   },
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////Pitchers////////////////////////////////////////////////////////////////////////////////////////
   {
     //13
     name: "Koji Uehara",
+    position: "Pitcher",
     wins: 0,
     losses: 1,
     era: 1.32,
@@ -244,11 +286,13 @@ var players = [
       walks: 0,
       strikeouts: 0
     }
+
   },
 
   {
     //14
     name: "Clay Buchholz",
+    position: "Pitcher",
     wins: 2,
     losses: 2,
     era: 5.63,
@@ -258,11 +302,13 @@ var players = [
       walks: 0,
       strikeouts: 0
     }
+
   },
 
   {
     //15
     name: "Felix Doubront",
+    position: "Pitcher",
     wins: 1,
     losses: 3,
     era: 5.09,
@@ -272,11 +318,13 @@ var players = [
       walks: 0,
       strikeouts: 0
     }
+
   },
 
   {
     //16
     name: "John Lackey",
+    position: "Pitcher",
     wins: 4,
     losses: 2,
     era: 3.72,
@@ -286,12 +334,14 @@ var players = [
       walks: 0,
       strikeouts: 0
     }
+
   },
 
   {
 
     //18
     name: "Jon Lester",
+    position: "Pitcher",
     wins: 3,
     losses: 4,
     era: 2.59,
@@ -301,12 +351,14 @@ var players = [
       walks: 0,
       strikeouts: 0
     }
+
   },
 
   {
 
     //17
     name: "Andrew Miller",
+    position: "Pitcher",
     wins: 1,
     losses: 0,
     era: 1.84,
@@ -316,11 +368,13 @@ var players = [
       walks: 0,
       strikeouts: 0
     }
-  },
+
+  }, 
 
   {
     //18
-    name: "Jake peavy",
+    name: "Jake Peavy",
+    position: "Pitcher",
     wins: 1,
     losses: 1,
     era: 2.87,
@@ -330,46 +384,8 @@ var players = [
       walks: 0,
       strikeouts: 0
     }
+
   }
-  
 ]
 
-//
 
-// Function to pull all multiple base hits and add them together.
-function multiplebase (player) {
-	return player.doubles  + player.triples + player.homeruns;
-}
-//
-
-// Function to pull player at bats and divide by the number of games to determine average at bat per game.
-function batspergame (player) {
-	return player.atbats / player.games;
-}
-//
-
-// Function to pull player homeruns and divide by the number of games to determine average home runs per game.
-function homerunspergame (player) {
-	return player.homeruns / player.games;
-}
-//
-
-// Function to pull player doubles and divide by the number of games to determine average home runs per game.
-function doublespergame (player) {
-	return player.doubles / player.games;
-}
-//
-
-// Function to pull player triples and divide by the number of games to determine average home runs per game.
-function triplespergame (player) {
-	return player.triples / player.games;
-}
-//
-
-function averagerbi (player) {
-  var total = array.reduce(function(first,second){
-    return first + second
-  })
-  console.log('total is', total);
-  return total / rbiaverage.length;
-}
