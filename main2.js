@@ -17,6 +17,27 @@ var teamstats = [15, 25, 50]
 //  said array then 
 
 
+function averagerbi () {
+  var getRbis = players.map(
+    function(
+      player
+      ) 
+    {
+    return 
+  }
+  ) 
+  // console.log('RBIs', [allrbis]);
+
+  var allRbis = getRbis.reduce(
+    function(
+      first,second
+      )
+    {
+    return first + second
+  }
+  )
+  return  allRbis/ allrbis.length;
+}
 ////////
 
 var averageRbis = players.map(function(value){
