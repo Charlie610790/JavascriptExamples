@@ -13,33 +13,27 @@ var teamstats = [15, 25, 50]
 //
 
 
-
 // for each over players array and get rbi's and push into new array then reduce 
 //  said array then 
 
 
-function averagerbi () {
-  var getRbis = players.forEach(
-    function(
-      player
-      ) 
-    {
-    // return [player.rbi]
-  }
-  ) 
-  // console.log('RBIs', [allrbis]);
+////////
 
-  var allRbis = getRbis.reduce(
-    function(
-      first,second
-      )
-    {
-    return first + second
-  }
-  )
-  return  allRbis/ allrbis.length;
-}
-//
+var averageRbis = players.map(function(value){
+return value.rbi;
+});
+
+var rbiSum = averageRbis.reduce(function(value1, value2) {
+return value1 + value2;
+});
+
+function average (sum,elements) {
+return sum / elements;
+};
+
+console.log(average(rbiSum,averageRbis.length));
+
+//////////
 
 var players = [
 //assigning player variable names and values
