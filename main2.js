@@ -44,6 +44,19 @@ function averageAtBats(atbat) {
 };
 
 //////////
+function averageHomeruns(homeruns) {
+  var HR = homeruns.map(function(player) {
+    return player.homeruns;
+  });
+
+  var sumHomeruns = HR.reduce(function(hr1, hr2) {
+    return hr1 + hr2;
+  });
+
+  return sumHomeruns / homeruns.length;
+
+};
+/////////
 
 var players = [
 //assigning player variable names and values
@@ -333,6 +346,7 @@ var players = [
     stolenbase: 0,
     caughtstealing: 0,
     atbats: 90,
+    homeruns: 2,
     runs: 9
 
   },
@@ -354,6 +368,7 @@ var players = [
     stolenbase: 0,
     caughtstealing: 0,
     atbats: 90,
+    homeruns: 2,
     runs: 9
 
   },
@@ -375,6 +390,7 @@ var players = [
     stolenbase: 0,
     caughtstealing: 0,
     atbats: 990,
+    homeruns: 2,
     runs: 9
 
   },
@@ -396,6 +412,7 @@ var players = [
     stolenbase: 0,
     caughtstealing: 0,
     atbats: 90,
+    homeruns: 2,
     runs: 9
 
   },
@@ -418,6 +435,7 @@ var players = [
     stolenbase: 0,
     caughtstealing: 0,
     atbats: 90,
+    homeruns: 2,
     runs: 9
 
   },
@@ -440,6 +458,7 @@ var players = [
     stolenbase: 0,
     caughtstealing: 0,
     atbats: 90,
+    homeruns: 2,
     runs: 9
 
   }, 
@@ -461,6 +480,7 @@ var players = [
     stolenbase: 0,
     caughtstealing: 0,
     atbats: 90,
+    homeruns: 2,
     runs: 9
 
   }
