@@ -17,42 +17,20 @@ var teamstats = [15, 25, 50]
 //  said array then 
 
 
-function averagerbi () {
-  var getRbis = players.map(
-    function(
-      player
-      ) 
-    {
-    return 
-  }
-  ) 
-  // console.log('RBIs', [allrbis]);
+function averageRBI(aryPlayers) {
+  var aryRBIs = aryPlayers.map(function(player) {
+    return [player.rbi];
+  });
 
-  var allRbis = getRbis.reduce(
-    function(
-      first,second
-      )
-    {
-    return first + second
-  }
-  )
-  return  allRbis/ allrbis.length;
-}
+  var sumRBIs = aryRBIs.reduce(function(rbi1, rbi2) {
+    return rbi1 + rbi2;
+  });
+
+  return sumRBIs / aryPlayers.length;
+};
 ////////
 
-var averageRbis = players.map(function(value){
-return value.rbi;
-});
 
-var rbiSum = averageRbis.reduce(function(value1, value2) {
-return value1 + value2;
-});
-
-function average (sum,elements) {
-return sum / elements;
-};
-
-console.log(average(rbiSum,averageRbis.length));
 
 //////////
 
@@ -294,6 +272,7 @@ var players = [
     position: "Pitcher",
     wins: 0,
     losses: 1,
+    rbi:0,
     era: 1.32,
     strikeouts: 19,
     walks: 3,
@@ -309,6 +288,7 @@ var players = [
     name: "Clay Buchholz",
     position: "Pitcher",
     wins: 2,
+    rbi:0,
     losses: 2,
     era: 5.63,
     strikeouts: 24,
@@ -328,6 +308,7 @@ var players = [
     losses: 3,
     era: 5.09,
     strikeouts: 24,
+    rbi:0,
     walks: 15,
     otherbatting: {
       walks: 0,
@@ -345,6 +326,7 @@ var players = [
     era: 3.72,
     strikeouts: 43,
     walks: 11,
+    rbi:0,
     otherbatting: {
       walks: 0,
       strikeouts: 0
@@ -362,6 +344,7 @@ var players = [
     era: 2.59,
     strikeouts: 58,
     walks: 10,
+    rbi:0,
     otherbatting: {
       walks: 0,
       strikeouts: 0
@@ -376,6 +359,7 @@ var players = [
     position: "Pitcher",
     wins: 1,
     losses: 0,
+    rbi:0,
     era: 1.84,
     strikeouts: 20,
     walks: 4,
@@ -392,6 +376,7 @@ var players = [
     position: "Pitcher",
     wins: 1,
     losses: 1,
+    rbi:0,
     era: 2.87,
     strikeouts: 36,
     walks: 21,
