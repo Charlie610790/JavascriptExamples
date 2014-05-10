@@ -71,74 +71,74 @@
 
 		
 		<div class="info">.forEach</div>
-		<div class="example">Sample 1: players.forEach(function(player){console.log("Player Name:", player.name, "Player RBIs:", player.rbi, "Player Homeruns:", player.homeruns, "Player Doubles:", player.doubles); })    ===== Players with their names, RBIs, Homeruns, and doubles
+		<div class="example">Sample 1:<br> players.forEach(function(player){console.log("Player Name:", player.name, "Player RBIs:", player.rbi, "Player Homeruns:", player.homeruns, "Player Doubles:", player.doubles); })    ===== Players with their names, RBIs, Homeruns, and doubles
 		<br><br>
-		Sample 2: players.forEach(function(player) {console.log(player.name);})    ===== Will return all players and post to console log.
+		Sample 2:<br> players.forEach(function(player) {console.log(player.name);})    ===== Will return all players and post to console log.
 		<br><br>
-		Sample 3: players.forEach(function(player){console.log("Player Name:", player.name, "RBIs:", player.rbi); })    ===== Will return all players and match with their RBIs and post to console log.
+		Sample 3:<br> players.forEach(function(player){console.log("Player Name:", player.name, "RBIs:", player.rbi); })    ===== Will return all players and match with their RBIs and post to console log.
 		<br><br>
-		Sample 4: players.forEach(function(player){console.log("Player Name:", player.name, "ERA:", player.era); })    ===== Will return all pitchers and match with their ERA and post to console log.
+		Sample 4:<br> players.forEach(function(player){console.log("Player Name:", player.name, "ERA:", player.era); })    ===== Will return all pitchers and match with their ERA and post to console log.
 		<br><br>
-		Sample 5: players.forEach(function(player){console.log("Player Name:", player.name, "Walks:", player.otherbatting.walks); })    ===== Will return walks for the player.
+		Sample 5:<br> players.forEach(function(player){console.log("Player Name:", player.name, "Walks:", player.otherbatting.walks); })    ===== Will return walks for the player.
 		<br><br>
-		Sample 6: players.forEach(function(player){console.log("Player Name:", player.name, "Strikeouts:", player.otherbatting.strikeouts); })    ===== Will return strikeouts for the player.
+		Sample 6:<br> players.forEach(function(player){console.log("Player Name:", player.name, "Strikeouts:", player.otherbatting.strikeouts); })    ===== Will return strikeouts for the player.
 		<br><br>
-		Sample 7: players.forEach(function(player){console.log(player.name, "has had", player.otherbatting.strikeouts, "strikeouts.","this season"); })    ===== Will return PLAYER NAME has had X strikeouts this season.
+		Sample 7:<br> players.forEach(function(player){console.log(player.name, "has had", player.otherbatting.strikeouts, "strikeouts.","this season"); })    ===== Will return PLAYER NAME has had X strikeouts this season.
 		<br><br>
-		Sample 8: players.forEach(function(player) {console.log(player.name,"-", player.position);})    ===== Will return Playername - Player Position.
+		Sample 8:<br> players.forEach(function(player) {console.log(player.name,"-", player.position);})    ===== Will return Playername - Player Position.
 		<br><br>
-		Sample 9: SAMPLE    ===== Descrip Here.
+		Sample 9:<br> players.forEach(function(player) {console.log(player.name,"-", player.runs);})     ===== Will return Playername - Runs.
 		<br><br>
-		Sample 10: SAMPLE    ===== Descrip Here.
+		Sample 10:<br> players.forEach(function(player) {console.log(player.name,"has stolen", player.stolenbase, "bases and has been caught stealing",player.stolenbase,"times." );})    ===== Will return how many bases the player has stolen and how many times they got caught stealing.
 		</div>
 
 		<div class="info">.reduce</div>
-		<div class="example">Sample 1: [players[0].rbi,players[1].rbi,players[2].rbi,players[3].rbi].reduce(function(player1, player2){
+		<div class="example">Sample 1:<br> [players[0].rbi,players[1].rbi,players[2].rbi,players[3].rbi].reduce(function(player1, player2){
   		return player1 + player2; })  ===== Will return the total RBIs of all 4 of the above players added together.
 		<br><br>
-		Sample 2: [players[4].atbats,players[5].atbats,players[6].atbats,players[7].atbats].reduce(function(player1, player2){
+		Sample 2:<br> [players[4].atbats,players[5].atbats,players[6].atbats,players[7].atbats].reduce(function(player1, player2){
   		return player1 + player2; })    ===== Will return the total at bats of the above listed players.
 		<br><br>
-		Sample 3: [players[4].otherbatting.walks,players[5].otherbatting.walks,players[6].otherbatting.walks,players[7].otherbatting.walks].reduce(function(player1, player2){
+		Sample 3:<br> [players[4].otherbatting.walks,players[5].otherbatting.walks,players[6].otherbatting.walks,players[7].otherbatting.walks].reduce(function(player1, player2){
   		return player1 + player2; })    ===== Will return the total of all walks for the above 4 players as nested in their "other batting" stats.
 		<br><br>
-		Sample 4: [players[0].homeruns,players[1].homeruns,players[2].homeruns,players[3].homeruns,players[4].homeruns, players[5].homeruns].reduce(function(player1, player2){
+		Sample 4:<br> [players[0].homeruns,players[1].homeruns,players[2].homeruns,players[3].homeruns,players[4].homeruns, players[5].homeruns].reduce(function(player1, player2){
   		return player1 + player2; })    ===== Will return the total homeruns for the above 6 players.
 		<br><br>
-		Sample 5: SAMPLE    ===== Descrip Here.
+		Sample 5:<br> averageRBI(players)    ===== If you run "averageRBI(players)" you get a return off all the players' rbis.  It does this by mapping the players array then returns the property [player.rbi].  Then it uses reduce on the newly created array to return the sum of all the objects in the array.  Then it divides the sum of all the rbis by the total number of objects in the array to get the average RBIs per player.
 		<br><br>
-		Sample 6: SAMPLE    ===== Descrip Here.
+		Sample 6:<br> averageAtBats(players) ===== If you run "averageAtBats(players)" you get a return off all the players' at bats. It does this by mapping the players array then returns the property [player.atbats]. Then it uses reduce on the newly created array to return the sum of all the objects in the array. Then it divides the sum of all the atbats by the total number of objects in the array to get the average atbats per player.     ===== Descrip Here.
 		<br><br>
-		Sample 7: SAMPLE    ===== Descrip Here.
+		Sample 7:<br> [players[0].atbats,players[1].atbats,players[2].atbats,players[3].atbats,players[4].atbats,players[5].atbats,players[6].atbats,players[7].atbats,players[8].atbats,players[9].atbats,players[10].atbats,players[11].atbats,players[12].atbats].reduce(function(player1, player2){ return player1 + player2; })    ===== This will return the at bats of just fielders and not pitchers.
 		<br><br>
-		Sample 8: SAMPLE    ===== Descrip Here.
+		Sample 8:<br> [players[13].strikeouts,players[14].strikeouts,players[15].strikeouts,players[16].strikeouts,players[17].strikeouts,players[18].strikeouts].reduce(function(player1, player2){ return player1 + player2; })    ===== This will return the total strikeouts for just the pitchers.
 		<br><br>
-		Sample 9: SAMPLE    ===== Descrip Here.
+		Sample 9:<br> SAMPLE    ===== Descrip Here.
 		<br><br>
-		Sample 10: SAMPLE    ===== Descrip Here.
+		Sample 10:<br> SAMPLE    ===== Descrip Here.
 		</div>
 
 
 		<div class="info">.map</div>
-		<div class="example">Sample 1: players.map(function(player) {return player.name;})    ===== Will return all players in seperate strings.
+		<div class="example">Sample 1:<br> players.map(function(player) {return player.name;})    ===== Will return all players in seperate strings.
 		<br><br>
-		Sample 2: players.map(function(player) {return [player.name];})    ===== Will return all players as seperate arrays.
+		Sample 2:<br> players.map(function(player) {return [player.name];})    ===== Will return all players as seperate arrays.
 		<br><br>
-		Sample 3: players.map(function(player) {return ["Player Name:",player.name,"Homeruns:",player.homeruns];})    ===== Will return an array with 4 objects each with a player name and homeruns attribute.
+		Sample 3:<br> players.map(function(player) {return ["Player Name:",player.name,"Homeruns:",player.homeruns];})    ===== Will return an array with 4 objects each with a player name and homeruns attribute.
 		<br><br>
-		Sample 4: players.map(function(player) {console.log("Player Name:",player.name);})    ===== Will return Player Name:Player Name Here
+		Sample 4:<br> players.map(function(player) {console.log("Player Name:",player.name);})    ===== Will return Player Name:Player Name Here
 		<br><br>
-		Sample 5: players.map(function(player) {console.log(player.name,"has",player.rbi,"RBIs.");})     ===== Will return Player Name has X RBIS.
+		Sample 5:<br> players.map(function(player) {console.log(player.name,"has",player.rbi,"RBIs.");})     ===== Will return Player Name has X RBIS.
 		<br><br>
-		Sample 6: {console.log(player.name,"has",player.otherbatting.strikeouts,"strikeouts.");})   ===== Will return Player Name has X strikeouts (from the nested object "other batting".)
+		Sample 6:<br> {console.log(player.name,"has",player.otherbatting.strikeouts,"strikeouts.");})   ===== Will return Player Name has X strikeouts (from the nested object "other batting".)
 		<br><br>
-		Sample 7: players.map(function(player) {"The Red Sox pitcher",console.log(player.name,"has",player.losses,"losses","and",player.wins,"wins.");})    ===== Will retrun "The Red Sox pitcher NAME has X wins and X losses.
+		Sample 7:<br> players.map(function(player) {"The Red Sox pitcher",console.log(player.name,"has",player.losses,"losses","and",player.wins,"wins.");})    ===== Will retrun "The Red Sox pitcher NAME has X wins and X losses.
 		<br><br>
-		Sample 8: players.map(function(player) {console.log(player.name,"has thrown",player.strikeouts,"strikeouts","and",player.walks,"walks.");})    ===== Will retrun "NAME has thrown X strikeouts and X walks for pitchers.
+		Sample 8:<br> players.map(function(player) {console.log(player.name,"has thrown",player.strikeouts,"strikeouts","and",player.walks,"walks.");})    ===== Will retrun "NAME has thrown X strikeouts and X walks for pitchers.
 		<br><br>
-		Sample 9 players.map(function(player) {console.log(player.name,"has had",player.otherbatting.strikeouts,"strikeouts","and",player.otherbatting.walks,"walks at bat.");})    ===== Will retrun "NAME has had X strikeouts and X walks at bat for fielders.
+		Sample 9:<br> players.map(function(player) {console.log(player.name,"has had",player.otherbatting.strikeouts,"strikeouts","and",player.otherbatting.walks,"walks at bat.");})    ===== Will retrun "NAME has had X strikeouts and X walks at bat for fielders.
 		<br><br>
-		Sample 10: players.map(function(player) {console.log(player.name,"has had",player.otherbatting.strikeouts,"strikeouts","and",player.otherbatting.walks,"walks at bat.  But has had a whopping",player.homeruns,"homeruns this season." );})    ===== Will retrun "NAME has had X strikeouts and X walks at bat for fielders.  Will also return "But has had a whopping X homeruns this season."
+		Sample 10:<br> players.map(function(player) {console.log(player.name,"has had",player.otherbatting.strikeouts,"strikeouts","and",player.otherbatting.walks,"walks at bat.  But has had a whopping",player.homeruns,"homeruns this season." );})    ===== Will retrun "NAME has had X strikeouts and X walks at bat for fielders.  Will also return "But has had a whopping X homeruns this season."
 		</div>
 </body>
 </html>
