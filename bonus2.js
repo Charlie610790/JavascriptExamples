@@ -57,17 +57,19 @@ function currencycode(avprice) {
  //currencycode(items[10])
  // console to call information
 
-function currencycode(avprice) {
+function madeOf(material) {
   
   if 
-  (avprice.currency_code == "GBP")
+  (material.materials == "wood")
     
-    return avprice.title 
+    return material.title 
   
   else 
   
-    return "NOT GBP"
+    return "Not Wood"
   };
+
+
 
 // Here's the data!
 var items = [{
