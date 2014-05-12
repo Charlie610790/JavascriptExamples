@@ -57,6 +57,7 @@ function currencycode(avprice) {
  //currencycode(items[10])
  // console to call information
 
+//this doesn't work
 function madeOf(material) {
   
   if 
@@ -68,7 +69,7 @@ function madeOf(material) {
   
     return "Not Wood"
   };
-
+//nope nothing :(
 
 
 // Here's the data!
