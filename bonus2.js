@@ -32,8 +32,9 @@ function averageprice(avprice) {
   })
 
   var priceAverage = sumPrices / avprice.length 
+
   {
-    console.log("The average price is",priceAverage,".");
+    console.log("The average price is $",priceAverage.toFixed(2),".");
   }
 }
 
